@@ -1,8 +1,18 @@
 /* ====== GENERAL PAGE RESET ====== */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'inter', sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6{
+
+  font-family: 'poppins', sans-serif;
+}
+
+p{
+font-family: 'inter', sans-serif;
+}
+  
 
 /* ====== NAVIGATION ====== */
 nav {
@@ -92,6 +102,7 @@ nav a {
 .about-boxes {
   display: flex;
   gap: 20px;
+  width: 40%;
 }
 
 .box {
@@ -225,4 +236,130 @@ nav a {
   gap: 25px;
   padding: 0;        /* This removes the default browser indentation */
   margin-bottom: 15px;
+}
+
+
+.publications{
+
+  margin-left: 20px;
+}
+
+.right-side{
+
+  width: 60%;
+  margin-top: -20px;
+}
+
+.about-text{
+
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.about-content{
+
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* ====== PROFESSIONAL COLOR PALETTE & STYLING ====== */
+
+:root {
+  --primary-color: #1e3a8a;      /* Deep Professional Navy Blue */
+  --primary-hover: #1e40af;      /* Slightly Lighter Navy for Hover */
+  --text-main: #1f2937;          /* Dark Charcoal for high readability */
+  --text-muted: #4b5563;         /* Medium Gray for secondary text */
+  --bg-light: #f9fafb;           /* Very soft off-white background */
+  --bg-card: #ffffff;            /* Clean white for cards */
+  --border-color: #e5e7eb;       /* Soft border grey */
+}
+
+/* Apply base color updates */
+body {
+  color: var(--text-main);
+  background-color: var(--bg-light);
+}
+
+/* Navigation Coloring */
+nav {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav a {
+  color: var(--text-main);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Profile Section Accent */
+.profile-text h1 {
+  color: var(--primary-color);
+}
+
+.profile-text h2 {
+  color: var(--text-muted);
+}
+
+/* Primary Buttons */
+.btn {
+  background: var(--primary-color);
+  color: white;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background: var(--primary-hover);
+}
+
+/* Sections & Containers Styling */
+.box, 
+.exp-box, 
+.project-card, 
+.about-text, 
+.contact-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+}
+
+.small-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+}
+
+.main-title {
+  color: var(--text-main);
+}
+
+/* Footer Coloring */
+.footer {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
 }
